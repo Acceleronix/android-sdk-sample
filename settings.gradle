@@ -1,0 +1,23 @@
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        maven { url 'https://maven.aliyun.com/repository/public' }
+        maven { url 'https://maven.aliyun.com/repository/central' }
+        maven { url 'https://maven.aliyun.com/repository/google' }
+        maven { url 'https://maven.aliyun.com/repository/gradle-plugin' }
+        maven { url 'https://developer.huawei.com/repo/' }
+        maven { url 'https://maven.aliyun.com/repository/releases' }
+        maven { url "https://www.jitpack.io" }
+        maven {
+            url 'http://106.15.139.220:8081/repository/maven-snapshots/'
+            allowInsecureProtocol = true
+        }
+        maven {
+            url 'http://106.15.139.220:8081/repository/maven-releases/'
+            allowInsecureProtocol = true
+        }
+    }
+}
+
+rootProject.name = "AndroidSDKDemo"
+include ':app'

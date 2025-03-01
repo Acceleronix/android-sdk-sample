@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/quec_smart_config_button_bg"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="@dimen/P4"
+        android:layout_marginBottom="@dimen/P1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:text="Select the device's working WIFI and enter the password"
+            android:paddingHorizontal="26dp"
+            android:textColor="@color/W1"
+            android:textSize="@dimen/T7_F"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/iv_quit"
+            android:layout_width="@dimen/I1"
+            android:layout_height="@dimen/I1"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/P5"
+            android:src="@mipmap/quec_smart_config_cross" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/P4"
+        android:layout_marginTop="@dimen/P5"
+        android:layout_marginEnd="@dimen/P4"
+
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:paddingHorizontal="@dimen/P3">
+
+            <ImageView
+                android:id="@+id/iv_wifi_icon"
+                android:layout_width="@dimen/I2"
+                android:layout_height="@dimen/I2"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/quec_smart_config_wifi_icon" />
+
+            <EditText
+                android:id="@+id/et_wifi_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginHorizontal="@dimen/P2"
+                android:layout_toStartOf="@id/iv_change_wifi"
+                android:layout_toEndOf="@+id/iv_wifi_icon"
+                android:background="@null"
+                android:ellipsize="end"
+                android:focusable="true"
+                android:maxLines="1"
+                android:text="QUEC_WIFI_TEST"
+                android:textColor="@color/W1"
+                android:textSize="@dimen/T6_F"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/iv_change_wifi"
+                android:layout_width="@dimen/IC3"
+                android:layout_height="@dimen/IC3"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/quec_smart_config_change_wifi" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/M6" />
+
+        <LinearLayout
+            android:visibility="gone"
+            android:background="@color/M6"
+            android:id="@+id/ll_open_permission"
+            android:paddingHorizontal="@dimen/P3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/quec_no_wifi_permission"
+                android:textColor="@color/W1"
+                android:textSize="@dimen/T4_F" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/quec_open_get_wifi_permission"
+                android:textColor="@color/M4"
+                android:textSize="@dimen/T4_F" />
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:paddingHorizontal="@dimen/P3">
+
+            <ImageView
+                android:id="@+id/iv_lock_icon"
+                android:layout_width="@dimen/I2"
+                android:layout_height="@dimen/I2"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/quec_smart_config_lock_highlight_icon" />
+
+            <EditText
+                android:id="@+id/et_wifi_pwd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginHorizontal="@dimen/P2"
+                android:layout_toStartOf="@id/cb_psw_show"
+                android:layout_toEndOf="@+id/iv_lock_icon"
+                android:background="@null"
+                android:hint="Please enter your password"
+                android:text="12332112"
+                android:textColor="@color/W1"
+                android:textColorHint="@color/W5"
+                android:textSize="@dimen/T6_F"
+                android:textStyle="bold" />
+
+            <CheckBox
+                android:id="@+id/cb_psw_show"
+                android:layout_width="@dimen/IC3"
+                android:layout_height="@dimen/IC3"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:button="@drawable/password_toggle_selector"
+                android:checked="true"
+                android:textColor="@color/M4"
+                android:textSize="@dimen/T4_F" />
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/M6" />
+
+    </LinearLayout>
+
+    <TextView
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/P4"
+        android:layout_marginTop="@dimen/P3"
+        android:layout_marginRight="@dimen/P4"
+        android:lines="2"
+        android:text="@string/quec_device_net_config_tip"
+        android:textColor="@color/W2"
+        android:textSize="@dimen/T4_F" />
+
+    <Button
+        android:id="@+id/btn_next"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_marginLeft="@dimen/P4"
+        android:layout_marginTop="@dimen/P8"
+        android:layout_marginRight="@dimen/P4"
+        android:background="@drawable/quec_basic_ui_login_button_background"
+        android:enabled="true"
+        android:text="@string/quec_device_next_step"
+        android:layout_marginBottom="@dimen/P6"
+        android:textColor="@color/W1"
+        android:textSize="@dimen/T4_F" />
+
+
+</LinearLayout>

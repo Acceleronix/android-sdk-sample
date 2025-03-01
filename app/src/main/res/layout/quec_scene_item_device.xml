@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_60"
+    android:orientation="horizontal"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:layout_gravity="center"
+        android:id="@+id/tvTitle"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:layout_marginRight="@dimen/dp_20"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:textColor="@color/W1"
+        android:textSize="@dimen/T4_F"
+        android:textStyle="bold"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/tv_status"
+        android:textColor="@color/W1"
+        android:layout_marginRight="@dimen/dp_10"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/tv_start"
+        android:text="Start network configuration"
+        android:padding="5dp"
+        android:textColor="@color/W1"
+        android:background="@drawable/quec_smart_config_start"
+        android:layout_marginRight="@dimen/dp_10"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    
+
+</LinearLayout>

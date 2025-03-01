@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:background="@drawable/white_bg"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/bt_sn_bind"
+                android:layout_width="match_parent"
+                android:background="@color/white"
+                android:text="Bind device via sn"
+                android:textSize="16sp"
+                android:textColor="@color/new_lan"
+                android:gravity="center"
+                android:layout_height="45dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#e5e5e5"
+                />
+
+            <Button
+                android:id="@+id/bt_unbind"
+                android:layout_width="match_parent"
+                android:background="@color/white"
+                android:text="Unbind the device through pk dk"
+                android:textSize="16sp"
+                android:textColor="@color/new_lan"
+                android:gravity="center"
+                android:layout_height="45dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#e5e5e5"
+                />
+
+            <Button
+                android:id="@+id/bt_receive_share"
+                android:layout_width="match_parent"
+                android:background="@color/white"
+                android:text="Accept device sharing"
+                android:textSize="16sp"
+                android:textColor="@color/new_lan"
+                android:gravity="center"
+                android:layout_height="45dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#e5e5e5"
+                />
+
+            <Button
+                android:id="@+id/bt_wifi"
+                android:layout_width="match_parent"
+                android:background="@color/white"
+                android:text="WIFI network configuration"
+                android:textSize="16sp"
+                android:textColor="@color/new_lan"
+                android:gravity="center"
+                android:layout_height="45dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#e5e5e5"
+                />
+
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/bt_cancel"
+            android:layout_width="match_parent"
+            android:background="@color/white"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:text="Cancel"
+            android:textSize="16sp"
+            android:textColor="@color/new_lan"
+            android:gravity="center"
+            android:layout_height="45dp"/>
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="343dp"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="8dp"
+        android:layout_centerInParent="true"
+        >
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+           <LinearLayout
+                   android:layout_width="match_parent"
+                   android:orientation="vertical"
+                  android:gravity="center_horizontal"
+                  android:paddingTop="10dp"
+                  android:paddingBottom="10dp"
+                   android:layout_height="wrap_content">
+
+               <Button
+                   android:id="@+id/bt_queryGroup"
+                   android:layout_width="match_parent"
+                   android:background="@color/white"
+                   android:text="Query device group details"
+                   android:textSize="16sp"
+                   android:textColor="@color/new_lan"
+                   android:gravity="center"
+                   android:layout_height="45dp"/>
+
+               <View
+                   android:layout_width="match_parent"
+                   android:layout_height="0.5dp"
+                   android:background="#e5e5e5"
+                   />
+               <Button
+                   android:id="@+id/bt_change_device_group"
+                   android:layout_width="match_parent"
+                   android:background="@color/white"
+                   android:text="Modify a device group"
+                   android:textSize="16sp"
+                   android:textColor="@color/new_lan"
+                   android:gravity="center"
+                   android:layout_height="45dp"/>
+
+               <View
+                   android:layout_width="match_parent"
+                   android:layout_height="0.5dp"
+                   android:background="#e5e5e5"
+                   />
+
+               <Button
+                   android:id="@+id/bt_add_device_to_group"
+                   android:layout_width="match_parent"
+                   android:background="@color/white"
+                   android:text="Adding devices to a device group"
+                   android:textSize="16sp"
+                   android:textColor="@color/new_lan"
+                   android:gravity="center"
+                   android:layout_height="45dp"/>
+
+               <View
+                   android:layout_width="match_parent"
+                   android:layout_height="0.5dp"
+                   android:background="#e5e5e5"
+                   />
+
+               <Button
+                   android:id="@+id/bt_query_in_group"
+                   android:layout_width="match_parent"
+                   android:background="@color/white"
+                   android:text="Query the device list in the device group"
+                   android:textSize="16sp"
+                   android:textColor="@color/new_lan"
+                   android:gravity="center"
+                   android:layout_height="45dp"/>
+
+               <View
+                   android:layout_width="match_parent"
+                   android:layout_height="0.5dp"
+                   android:background="#e5e5e5"
+                   />
+
+               <Button
+                   android:id="@+id/bt_delete_device_in_group"
+                   android:layout_width="match_parent"
+                   android:background="@color/white"
+                   android:text="Remove a device from a device group"
+                   android:textSize="16sp"
+                   android:textColor="@color/new_lan"
+                   android:gravity="center"
+                   android:layout_height="45dp"/>
+
+               <View
+                   android:layout_width="match_parent"
+                   android:layout_height="0.5dp"
+                   android:background="#e5e5e5"
+                   />
+
+               <Button
+                   android:id="@+id/bt_delete_group"
+                   android:layout_width="match_parent"
+                   android:background="@color/white"
+                   android:text="Deleting a Device Group"
+                   android:textSize="16sp"
+                   android:textColor="@color/new_lan"
+                   android:gravity="center"
+                   android:layout_height="45dp"/>
+
+               <View
+                   android:layout_width="match_parent"
+                   android:layout_height="0.5dp"
+                   android:background="#e5e5e5"
+                   />
+
+
+               <Button
+                   android:id="@+id/bt_set_group_share"
+                   android:layout_width="match_parent"
+                   android:background="@color/white"
+                   android:text="Sharer sets device group sharing information"
+                   android:textSize="16sp"
+                   android:textColor="@color/new_lan"
+                   android:gravity="center"
+                   android:layout_height="45dp"/>
+
+               <View
+                   android:layout_width="match_parent"
+                   android:layout_height="0.5dp"
+                   android:background="#e5e5e5"
+                   />
+
+               <Button
+                   android:id="@+id/bt_query_group_accept_users"
+                   android:layout_width="match_parent"
+                   android:background="@color/white"
+                   android:text="The sharer queries the list of people who have been shared with the device group"
+                   android:textSize="16sp"
+                   android:textColor="@color/new_lan"
+                   android:gravity="center"
+                   android:layout_height="wrap_content"/>
+
+
+               <View
+                   android:layout_width="match_parent"
+                   android:layout_height="0.5dp"
+                   android:background="#e5e5e5"
+                   />
+
+
+               <Button
+                   android:id="@+id/bt_change_shared_device_group"
+                   android:layout_width="match_parent"
+                   android:background="@color/white"
+                   android:text="The shareeur modifies the name of the shared device group"
+                   android:textSize="16sp"
+                   android:textColor="@color/new_lan"
+                   android:gravity="center"
+                   android:layout_height="45dp"/>
+
+
+               <View
+                   android:layout_width="match_parent"
+                   android:layout_height="0.5dp"
+                   android:background="#e5e5e5"
+                   />
+
+               <Button
+                   android:id="@+id/bt_sharer_cancel_group"
+                   android:layout_width="match_parent"
+                   android:background="@color/white"
+                   android:text="The person being shared cancels device group sharing"
+                   android:textSize="16sp"
+                   android:textColor="@color/new_lan"
+                   android:gravity="center"
+                   android:layout_height="45dp"/>
+
+
+               <View
+                   android:layout_width="match_parent"
+                   android:layout_height="0.5dp"
+                   android:background="#e5e5e5"
+                   />
+
+               <Button
+                   android:id="@+id/bt_user_cancel_share"
+                   android:layout_width="match_parent"
+                   android:background="@color/white"
+                   android:text="The sharer cancels the device group sharing"
+                   android:textSize="16sp"
+                   android:textColor="@color/new_lan"
+                   android:gravity="center"
+                   android:layout_height="45dp"/>
+
+
+               <View
+                   android:layout_width="match_parent"
+                   android:layout_height="0.5dp"
+                   android:background="#e5e5e5"
+                   />
+
+               <Button
+                   android:id="@+id/bt_cancel"
+                   android:layout_width="match_parent"
+                   android:background="@color/white"
+                   android:text="Cancel"
+                   android:textSize="16sp"
+                   android:textColor="@color/new_lan"
+                   android:gravity="center"
+                   android:layout_height="45dp"/>
+
+
+           </LinearLayout>
+        </ScrollView>
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

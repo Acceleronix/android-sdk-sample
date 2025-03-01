@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="343dp"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="8dp"
+        android:layout_centerInParent="true"
+        >
+           <LinearLayout
+                   android:layout_width="match_parent"
+                   android:orientation="vertical"
+                  android:gravity="center_horizontal"
+                  android:paddingTop="10dp"
+                  android:paddingBottom="10dp"
+                   android:layout_height="wrap_content">
+
+               <Button
+                   android:id="@+id/bt_changeDevice"
+                   android:layout_width="match_parent"
+                   android:background="@color/white"
+                   android:text="Modify the device name"
+                   android:textSize="16sp"
+                   android:textColor="@color/new_lan"
+                   android:gravity="center"
+                   android:layout_height="45dp"/>
+
+               <View
+                   android:layout_width="match_parent"
+                   android:layout_height="0.5dp"
+                   android:background="#e5e5e5"
+                   />
+
+               <Button
+                   android:visibility="gone"
+                   android:id="@+id/bt_queryDeviceInfor"
+                   android:layout_width="match_parent"
+                   android:background="@color/white"
+                   android:text="Query device information"
+                   android:textSize="16sp"
+                   android:textColor="@color/new_lan"
+                   android:gravity="center"
+                   android:layout_height="45dp"/>
+
+<!--               <View-->
+<!--                   android:layout_width="match_parent"-->
+<!--                   android:layout_height="0.5dp"-->
+<!--                   android:background="#e5e5e5"-->
+<!--                   />-->
+
+               <Button
+                   android:visibility="gone"
+                   android:id="@+id/bt_queryShareUserList"
+                   android:layout_width="match_parent"
+                   android:background="@color/white"
+                   android:text="The sharer queries the list of people the device is shared with"
+                   android:textSize="16sp"
+                   android:textColor="@color/new_lan"
+                   android:gravity="center"
+                   android:layout_height="45dp"/>
+
+<!--               <View-->
+<!--                   android:layout_width="match_parent"-->
+<!--                   android:layout_height="0.5dp"-->
+<!--                   android:background="#e5e5e5"-->
+<!--                   />-->
+
+               <Button
+                   android:visibility="gone"
+                   android:id="@+id/bt_queryUpgradePlan"
+                   android:layout_width="match_parent"
+                   android:background="@color/white"
+                   android:text="Query the upgrade plan and report the component upgrade status"
+                   android:textSize="16sp"
+                   android:textColor="@color/new_lan"
+                   android:gravity="center"
+                   android:layout_height="45dp"/>
+
+<!--               <View-->
+<!--                   android:layout_width="match_parent"-->
+<!--                   android:layout_height="0.5dp"-->
+<!--                   android:background="#e5e5e5"-->
+<!--                   />-->
+
+
+               <Button
+                   android:visibility="gone"
+                   android:id="@+id/bt_set_share"
+                   android:layout_width="match_parent"
+                   android:background="@color/white"
+                   android:text="Sharer sets sharing information"
+                   android:textSize="16sp"
+                   android:textColor="@color/new_lan"
+                   android:gravity="center"
+                   android:layout_height="45dp"/>
+
+<!--               <View-->
+<!--                   android:layout_width="match_parent"-->
+<!--                   android:layout_height="0.5dp"-->
+<!--                   android:background="#e5e5e5"-->
+<!--                   />-->
+
+               <Button
+                   android:visibility="gone"
+                   android:id="@+id/bt_owner_cancelShare"
+                   android:layout_width="match_parent"
+                   android:background="@color/white"
+                   android:text="The sharer cancels device sharing"
+                   android:textSize="16sp"
+                   android:textColor="@color/new_lan"
+                   android:gravity="center"
+                   android:layout_height="45dp"/>
+
+<!--               <View-->
+<!--                   android:layout_width="match_parent"-->
+<!--                   android:layout_height="0.5dp"-->
+<!--                   android:background="#e5e5e5"-->
+<!--                   />-->
+
+
+               <Button
+                   android:visibility="gone"
+                   android:id="@+id/bt_cancelShareByReceiver"
+                   android:layout_width="match_parent"
+                   android:background="@color/white"
+                   android:text="The person being shared cancels device sharing"
+                   android:textSize="16sp"
+                   android:textColor="@color/new_lan"
+                   android:gravity="center"
+                   android:layout_height="45dp"/>
+
+               <View
+                   android:layout_width="match_parent"
+                   android:layout_height="0.5dp"
+                   android:background="#e5e5e5"
+                   />
+
+
+               <Button
+                   android:id="@+id/bt_device_control"
+                   android:layout_width="match_parent"
+                   android:background="@color/white"
+                   android:text="Device Control"
+                   android:textSize="16sp"
+                   android:textColor="@color/new_lan"
+                   android:gravity="center"
+                   android:layout_height="45dp"/>
+
+               <View
+                   android:layout_width="match_parent"
+                   android:layout_height="0.5dp"
+                   android:background="#e5e5e5"
+                   />
+
+               <Button
+                   android:visibility="gone"
+                   android:id="@+id/bt_query_group"
+                   android:layout_width="match_parent"
+                   android:background="@color/white"
+                   android:text="Query the device group list based on the device"
+                   android:textSize="16sp"
+                   android:textColor="@color/new_lan"
+                   android:gravity="center"
+                   android:layout_height="45dp"/>
+
+               <View
+                   android:layout_width="match_parent"
+                   android:layout_height="0.5dp"
+                   android:background="#e5e5e5"
+                   />
+
+               <Button
+                   android:visibility="gone"
+                   android:id="@+id/bt_ble_ota"
+                   android:layout_width="match_parent"
+                   android:background="@color/white"
+                   android:text="Ble ota"
+                   android:textSize="16sp"
+                   android:textColor="@color/new_lan"
+                   android:gravity="center"
+                   android:layout_height="45dp"/>
+
+               <View
+                   android:layout_width="match_parent"
+                   android:layout_height="0.5dp"
+                   android:background="#e5e5e5"
+                   />
+
+               <Button
+                   android:id="@+id/bt_cancel"
+                   android:layout_width="match_parent"
+                   android:background="@color/white"
+                   android:text="Cancel"
+                   android:textSize="16sp"
+                   android:textColor="@color/new_lan"
+                   android:gravity="center"
+                   android:layout_height="45dp"/>
+
+
+           </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

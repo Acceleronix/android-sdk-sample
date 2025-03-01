@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_centerVertical="true"
+            android:background="@mipmap/backarrow"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:text="Email Login"
+            android:textColor="@color/main1"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:layout_height="wrap_content"/>
+
+        <View
+            android:background="#e5e5e5"
+            android:layout_width="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_height="0.5dp"
+            />
+
+    </RelativeLayout>
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/edit_countryCode"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginHorizontal="@dimen/dp_48"
+        android:layout_marginTop="50dp"
+        android:hint="please enter country code"
+        android:textColorHint="@color/W3" />
+
+    <RelativeLayout
+        android:id="@+id/rl_one"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:layout_marginLeft="48dp"
+        android:layout_marginRight="48dp"
+        >
+
+        <EditText
+            android:id="@+id/edit_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:gravity="left"
+            android:hint="Please enter your email address"
+            android:inputType="text"
+            android:singleLine="true"
+            android:textColor="@color/main1"
+            android:textColorHint="@color/main3"
+            android:textCursorDrawable="@null"
+            android:textSize="16sp" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/gray_line"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_two"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:layout_marginLeft="48dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="48dp"
+        >
+
+        <EditText
+            android:id="@+id/edit_pass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:gravity="left"
+            android:hint="Please enter your password"
+            android:inputType="textPassword"
+            android:singleLine="true"
+            android:textColor="@color/main1"
+            android:textColorHint="@color/main3"
+            android:textCursorDrawable="@null"
+            android:textSize="16sp" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/gray_line"
+            />
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/bt_login"
+        android:layout_width="match_parent"
+        android:text="Login"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/white_bg"
+        android:textColor="@color/new_lan"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:layout_height="50dp"/>
+
+
+    <TextView
+        android:id="@+id/tv_register_mail"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:text="Not registered yet? Register now?"
+        android:textColor="@color/new_lan"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:layout_height="wrap_content"/>
+
+
+
+
+
+
+</LinearLayout>

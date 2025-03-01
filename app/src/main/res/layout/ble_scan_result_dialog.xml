@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="343dp"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="8dp"
+        android:layout_centerInParent="true"
+        >
+           <LinearLayout
+                   android:layout_width="match_parent"
+                   android:orientation="vertical"
+                  android:gravity="center_horizontal"
+                  android:paddingTop="10dp"
+                  android:paddingBottom="10dp"
+                   android:layout_height="wrap_content">
+
+
+               <androidx.recyclerview.widget.RecyclerView
+                   android:id="@+id/mList"
+                   android:layout_width="match_parent"
+                   android:layout_height="350dp">
+
+               </androidx.recyclerview.widget.RecyclerView>
+
+               <Button
+                   android:id="@+id/bt_stop"
+                   android:layout_marginLeft="10dp"
+                   android:layout_marginRight="10dp"
+                   android:layout_width="match_parent"
+                   android:text="Stop Scan"
+                   android:layout_weight="1"
+                   android:background="@color/new_lan"
+                   android:textColor="@color/white"
+                   android:textSize="16sp"
+                   android:gravity="center"
+                   android:layout_height="wrap_content"/>
+
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:orientation="horizontal"
+                   android:layout_marginTop="20dp"
+                   android:layout_height="50dp">
+                   <Button
+                       android:id="@+id/bt_cancel"
+                       android:layout_marginLeft="10dp"
+                       android:layout_marginRight="10dp"
+                       android:layout_width="match_parent"
+                       android:text="Cancel"
+                       android:layout_weight="1"
+                       android:background="@color/new_lan"
+                       android:textColor="@color/white"
+                       android:textSize="16sp"
+                       android:gravity="center"
+                       android:layout_height="wrap_content"/>
+
+               </LinearLayout>
+
+
+           </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>
