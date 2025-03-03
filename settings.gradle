@@ -19,5 +19,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "AndroidSDKDemo"
+rootProject.name = "Acceleronix SDK Demo"
 include ':app'

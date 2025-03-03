@@ -72,7 +72,7 @@
         <item name="android:windowExitAnimation">@anim/dialog_bottom_exit</item>
     </style>
 
-    <style name="quec_smart_config_BottomDialog"
+    <style name="smart_config_BottomDialog"
         parent="@android:style/Theme.Holo.Light.Dialog.MinWidth">
         <!--背景颜色和透明程度-->
         <item name="android:windowBackground">@android:color/transparent</item>
@@ -80,9 +80,9 @@
     </style>
 
 
-    <style name="quec_smart_config_BottomAnim">
-        <item name="android:windowEnterAnimation">@anim/quec_smart_config_dialog_in</item>
-        <item name="android:windowExitAnimation">@anim/quec_smart_config_dialog_out</item>
+    <style name="smart_config_BottomAnim">
+        <item name="android:windowEnterAnimation">@anim/smart_config_dialog_in</item>
+        <item name="android:windowExitAnimation">@anim/smart_config_dialog_out</item>
     </style>
 
 </resources>

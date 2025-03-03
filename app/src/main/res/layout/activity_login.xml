@@ -49,7 +49,7 @@
             android:orientation="horizontal">
 
             <RadioButton
-                android:id="@+id/rbChangeServiceTypeQuec"
+                android:id="@+id/rbChangeServiceType"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:checked="true"

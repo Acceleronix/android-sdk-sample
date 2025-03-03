@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.quectel.app.demo">
+    package="com.acceleronix.app.demo">
 
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
@@ -26,7 +26,7 @@
 
 
     <application
-        android:name=".App"
+        android:name="com.acceleronix.app.demo.App"
         android:allowBackup="false"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/appname"
@@ -35,7 +35,7 @@
         android:supportsRtl="true">
 
         <activity
-            android:name=".MainActivity"
+            android:name="com.acceleronix.app.demo.MainActivity"
             android:configChanges="keyboard|keyboardHidden|orientation|screenSize|uiMode"
             android:exported="true"
             android:screenOrientation="portrait"
@@ -48,78 +48,78 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".ui.AuthCodeLoginActivity"
+            android:name="com.acceleronix.app.demo.ui.AuthCodeLoginActivity"
             android:exported="false"
             android:theme="@style/TranslucentTheme"/>
         <activity
-            android:name=".ui.LoginActivity"
+            android:name="com.acceleronix.app.demo.ui.LoginActivity"
             android:screenOrientation="portrait"
             android:launchMode="singleTask"
             android:theme="@style/TranslucentTheme" />
         <activity
-            android:name=".ui.RegisterActivity"
+            android:name="com.acceleronix.app.demo.ui.RegisterActivity"
             android:screenOrientation="portrait"
             android:theme="@style/TranslucentTheme" />
         <activity
-            android:name=".ui.HomeActivity"
+            android:name="com.acceleronix.app.demo.ui.HomeActivity"
             android:screenOrientation="portrait"
             android:theme="@style/TranslucentTheme" />
         <activity
-            android:name=".ui.UpdateUserActivity"
+            android:name="com.acceleronix.app.demo.ui.UpdateUserActivity"
             android:screenOrientation="portrait"
             android:theme="@style/TranslucentTheme" />
         <activity
-            android:name=".ui.ResetPasswordByPhoneActivity"
+            android:name="com.acceleronix.app.demo.ui.ResetPasswordByPhoneActivity"
             android:screenOrientation="portrait"
             android:theme="@style/TranslucentTheme" />
         <activity
-            android:name=".ui.SelectLoginActivity"
+            android:name="com.acceleronix.app.demo.ui.SelectLoginActivity"
             android:screenOrientation="portrait"
             android:theme="@style/TranslucentTheme" />
         <activity
-            android:name=".ui.EmailLoginActivity"
+            android:name="com.acceleronix.app.demo.ui.EmailLoginActivity"
             android:screenOrientation="portrait"
             android:theme="@style/TranslucentTheme" />
         <activity
-            android:name=".ui.EmailRegisterActivity"
+            android:name="com.acceleronix.app.demo.ui.EmailRegisterActivity"
             android:screenOrientation="portrait"
             android:theme="@style/TranslucentTheme" />
         <activity
-            android:name=".ui.ResetPasswordByEmailActivity"
+            android:name="com.acceleronix.app.demo.ui.ResetPasswordByEmailActivity"
             android:screenOrientation="portrait"
             android:theme="@style/TranslucentTheme" />
         <activity
-            android:name=".ui.UpdateUserPhoneActivity"
+            android:name="com.acceleronix.app.demo.ui.UpdateUserPhoneActivity"
             android:screenOrientation="portrait"
             android:theme="@style/TranslucentTheme" />
         <activity
-            android:name=".ui.DeviceControlActivity"
+            android:name="com.acceleronix.app.demo.ui.DeviceControlActivity"
             android:screenOrientation="portrait"
             android:theme="@style/TranslucentTheme" />
         <activity
-            android:name=".ui.SharedGroupOfDevicesActivity"
+            android:name="com.acceleronix.app.demo.ui.SharedGroupOfDevicesActivity"
             android:screenOrientation="portrait"
             android:theme="@style/TranslucentTheme" />
         <activity
-            android:name=".ui.DistributionNetworkActivity"
+            android:name="com.acceleronix.app.demo.ui.DistributionNetworkActivity"
             android:configChanges="keyboard|keyboardHidden|orientation|screenSize|uiMode"
             android:screenOrientation="portrait"
             android:theme="@style/TranslucentTheme"
             android:windowSoftInputMode="adjustResize" />
         <activity
-            android:name=".ui.UpdateImageActivity"
+            android:name="com.acceleronix.app.demo.ui.UpdateImageActivity"
             android:screenOrientation="portrait"
             android:theme="@style/TranslucentTheme" />
         <activity
-            android:name=".ui.SelectOtaActivity"
+            android:name="com.acceleronix.app.demo.ui.SelectOtaActivity"
             android:screenOrientation="portrait"
             android:theme="@style/TranslucentTheme" />
         <activity
-            android:name=".ui.CloudOtaActivity"
+            android:name="com.acceleronix.app.demo.ui.CloudOtaActivity"
             android:screenOrientation="portrait"
             android:theme="@style/TranslucentTheme" />
         <activity
-            android:name=".ui.BleOtaActivity"
+            android:name="com.acceleronix.app.demo.ui.BleOtaActivity"
             android:screenOrientation="portrait"
             android:theme="@style/TranslucentTheme" />
 

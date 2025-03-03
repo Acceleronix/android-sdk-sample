@@ -7,7 +7,7 @@ android {
     compileSdk 32
 
     defaultConfig {
-        applicationId "com.quectel.app.demo"
+        applicationId "com.acceleronix.app.demo"
         minSdk 24
         targetSdk 32
         versionCode 1
@@ -38,15 +38,15 @@ android {
     signingConfigs {
         debug {
             storeFile file("sdkdemokey.jks")
-            storePassword "quec123456"
-            keyAlias "quecdemo"
-            keyPassword "quec123456"
+            storePassword "acceleronix123456"
+            keyAlias "demo"
+            keyPassword "acceleronix123456"
         }
         release {
             storeFile file("sdkdemokey.jks")
-            storePassword "quec123456"
-            keyAlias "quecdemo"
-            keyPassword "quec123456"
+            storePassword "acceleronix123456"
+            keyAlias "demo"
+            keyPassword "acceleronix123456"
         }
     }
 
@@ -92,7 +92,7 @@ dependencies {
     implementation 'com.github.zcweng:switch-button:0.0.3@aar'
     implementation 'com.android.support:multidex:1.0.3'
 
-    //必选引入的三方库
+    //Required third-party libraries
     implementation "polidea.rxandroidble2.quectel:rx-ble:1.18.1.fix1"
     implementation "com.polidea.rxandroidble2:dagger-library-shadow:1.18.1"
     implementation 'io.reactivex.rxjava2:rxjava:2.2.19'
@@ -102,7 +102,7 @@ dependencies {
     implementation "com.neovisionaries:nv-websocket-client:2.14"
 
 
-    //sdk核心库
+    //sdk core library
     // api project(":QuecIotSdk")
     implementation 'com.quectel.app.sdk:quec-iot-sdk:1.12.0'
 }
@@ -111,8 +111,6 @@ allprojects {
     configurations.all {
         resolutionStrategy {
             cacheChangingModulesFor 0, 'seconds'
-            //强制指定的版本
-
         }
     }
 }
