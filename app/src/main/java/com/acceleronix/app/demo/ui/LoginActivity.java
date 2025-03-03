@@ -190,22 +190,22 @@ public class LoginActivity extends BaseActivity {
                     public void onConfirm(QuecCloudServiceType type) {
                         switch (type){
                             case QuecCloudServiceTypeChina:
-                                QuecIotAppSdk.getInstance().startWithUserDomain(getApplication(),"C.DM.5903.1", "EufftRJSuWuVY7c6txzGifV9bJcfXHAFa7hXY5doXSn7", QuecCloudServiceType.QuecCloudServiceTypeChina);
+                                QuecIotAppSdk.getInstance().startWithUserDomain(getApplication(),CloudConfig.DATA_CENTER_CHINA_USER_DOMAIN, CloudConfig.DATA_CENTER_CHINA_DOMAIN_SECRET, QuecCloudServiceType.QuecCloudServiceTypeChina);
                                 rbChangeServiceTypeQuec.setText("Data Center-China");
                                 serviceType=0;
                                 SPUtils.putBoolean(getMyActivity(), CloudConfig.IS_CUSTOM_CLOUD, false);
                                 SPUtils.putInt(getMyActivity(), CloudConfig.ClOUD_SERVICE_TYPE, serviceType);
-                                SPUtils.putString(getMyActivity(), CloudConfig.USER_DOMAIN, "C.DM.5903.1");
-                                SPUtils.putString(getMyActivity(), CloudConfig.DOMAIN_SECRET, "EufftRJSuWuVY7c6txzGifV9bJcfXHAFa7hXY5doXSn7");
+                                SPUtils.putString(getMyActivity(), CloudConfig.USER_DOMAIN, CloudConfig.DATA_CENTER_CHINA_USER_DOMAIN);
+                                SPUtils.putString(getMyActivity(), CloudConfig.DOMAIN_SECRET, CloudConfig.DATA_CENTER_CHINA_DOMAIN_SECRET);
                                 break;
                             case QuecCloudServiceTypeEurope:
-                                QuecIotAppSdk.getInstance().startWithUserDomain(LoginActivity.this.getApplication(),"E.SP.4294967410", "3aRNUwWahjyANa7WfBK2wCCkxCexB6nXxKJwXxfePvzf", QuecCloudServiceType.QuecCloudServiceTypeEurope);
+                                QuecIotAppSdk.getInstance().startWithUserDomain(LoginActivity.this.getApplication(),CloudConfig.DATA_CENTER_EUROPE_USER_DOMAIN, CloudConfig.DATA_CENTER_EUROPE_DOMAIN_SECRET, QuecCloudServiceType.QuecCloudServiceTypeEurope);
                                 rbChangeServiceTypeQuec.setText("Data Center-Europe");
                                 serviceType=1;
                                 SPUtils.putBoolean(getMyActivity(), CloudConfig.IS_CUSTOM_CLOUD, false);
                                 SPUtils.putInt(getMyActivity(), CloudConfig.ClOUD_SERVICE_TYPE, serviceType);
-                                SPUtils.putString(getMyActivity(), CloudConfig.USER_DOMAIN, "E.SP.4294967410");
-                                SPUtils.putString(getMyActivity(), CloudConfig.DOMAIN_SECRET, "3aRNUwWahjyANa7WfBK2wCCkxCexB6nXxKJwXxfePvzf");
+                                SPUtils.putString(getMyActivity(), CloudConfig.USER_DOMAIN, CloudConfig.DATA_CENTER_EUROPE_USER_DOMAIN);
+                                SPUtils.putString(getMyActivity(), CloudConfig.DOMAIN_SECRET, CloudConfig.DATA_CENTER_EUROPE_DOMAIN_SECRET);
                                 break;
                             case QuecCloudServiceTypeNorthAmerica:
                                 QuecIotAppSdk.getInstance().startWithUserDomain(LoginActivity.this.getApplication(),"U.SP.8589934603", "pUTp5goB1bLinprRQMmK3EPiiuPiGrJtKUNptWRXVmP", QuecCloudServiceType.QuecCloudServiceTypeNorthAmerica);
@@ -213,8 +213,8 @@ public class LoginActivity extends BaseActivity {
                                 serviceType=2;
                                 SPUtils.putBoolean(getMyActivity(), CloudConfig.IS_CUSTOM_CLOUD, false);
                                 SPUtils.putInt(getMyActivity(), CloudConfig.ClOUD_SERVICE_TYPE, serviceType);
-                                SPUtils.putString(getMyActivity(), CloudConfig.USER_DOMAIN, "U.SP.8589934603");
-                                SPUtils.putString(getMyActivity(), CloudConfig.DOMAIN_SECRET, "pUTp5goB1bLinprRQMmK3EPiiuPiGrJtKUNptWRXVmP");
+                                SPUtils.putString(getMyActivity(), CloudConfig.USER_DOMAIN, CloudConfig.DATA_CENTER_AMERICA_USER_DOMAIN);
+                                SPUtils.putString(getMyActivity(), CloudConfig.DOMAIN_SECRET, CloudConfig.DATA_CENTER_AMERICA_DOMAIN_SECRET);
                                 break;
                         }
                     }
