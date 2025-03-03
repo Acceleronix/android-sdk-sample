@@ -1,4 +1,4 @@
-# Acceleronix Android App SDK Sample for Objective-C
+# Acceleronix Android App SDK Sample
 This sample demonstrates the use of Acceleronix Android App SDK to build an IoT app from scratch. Acceleronix Android App SDK is divided into several functional groups to give developers a clear understanding of different features, including user registration, device binding and control, and device group settings. It supports binding both cellular and WiFi/Bluetooth devices. Device control can be performed via HTTP and WebSocket.
 
 # Get Started
