@@ -16,4 +16,4 @@ Call `public void initProject(int serviceType, String userDomain, String domainS
 | domainSecret | Yes      | User domain secret, generated when creating an app on the Acceleronix IoT platform |
 
 # References
-For more information on the Acceleronix Android App SDK, please refer to the [API documentation](https://github.com/thridparty-cloud2/quecloud-iot-android-sdk-demo/blob/master/api%E5%88%97%E8%A1%A8.md).
+For more information on the Acceleronix Android App SDK, please refer to the [API documentation](https://github.com/Acceleronix/android-sdk-sample-java/blob/main/API_doc_android.md).
